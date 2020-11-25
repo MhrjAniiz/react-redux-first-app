@@ -8,7 +8,7 @@ const cookieReducer = (state = initalState, action) => {
     case BUY_COOKIE:
       return {
         ...state,
-        numOfCookies: state.numOfCookies - 1,
+        numOfCookies: state.numOfCookies - action.payload,
       };
     default:
       return state;
